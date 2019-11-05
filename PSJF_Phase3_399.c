@@ -1,45 +1,12 @@
-/* ******************************************************************* *
-* PSJF_base.c:                                                         *
-*                                                                      *
-* This C program simulates a short-term process scheduler for          *
-* "Premptive Priority Non-Preemptive SJF (Shortest Job First)"         *
-* short-term process scheduling algorithm.                             *
-*                                                                      *
-* This program takes a two-dimensional array ("process_list") that     *
-* define each process "i" using the following attributes:              *
-*                                                                      *
-*   REQUIRED PARAMETERS (for Process i) ------------------------------ *
-*   (0) process_list[i][0] = 0;     // process ID                      *
-*   (1) process_list[i][1] = 1;     // start time                      *
-*   (2) process_list[i][2] = 15;    // total execution time            *
-*   (3) process_list[i][3] = 9;     // process priority                *
-*   ------------------------------------------------------------------ *
-*                                                                      *
-* Each process is defined in a module, "initialize_process_list".      *
-* For the process priority, the smaller the priority number is, the    *
-* higher the priority is (i.e., '0' means the highest priority).       *
-*                                                                      *
-* The outputs from this simulator are:                                 *
-*   (a) process start time (when it starts running)                    *
-*   (b) how long a process is executed (in time units)                 *
-*   (c) stop time (completed or preempted time)                        *
-*   (d) - optional - if it is completed or preempted                   *
-*                                                                      *
-* Compile: cc PSJF_base.c                                              *
-*                                                                      *
-* Host: os.cs.siue.edu                                                 *
-*                                                                      *
-* Last Updated at: 19:12, Januray 12, 2018                             *
-*                                                                      *
-* Place: Edwardsville, IL                                              *
-*                                                                      *
-* ******************************************************************** */
 // Assignment: Project 2 Phase 3
 // Name : Steven Perry, #800383399
 // Course: CS314 - 002
 // Created : 3 / 19 / 2018
 // Description : Uses a Pre-emptive SJF algorithm to select processes
 //					from a list.
+// Note: the "PSJF_base.c" file which I have included seperately was 
+// 	 provided by my instructor, this file
+//       includes my modifications for the assignment
 // 
 			     
 #include <string.h>                    // for strerror()               //
